@@ -1,0 +1,15 @@
+.main__servicesCost{
+  margin: 100px auto;
+}
+
+.servicesCost{
+  .servicesCost__heading{
+    margin: 0 0 30px 0;
+  }
+
+  .servicesCost__content{
+    max-width: 670px;
+    @include latoLightGrayFont;
+    margin: 0 0 30px 0;
+  }
+}

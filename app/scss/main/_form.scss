@@ -1,0 +1,55 @@
+.main__form{
+  margin: 100px auto;
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .form__about{
+    max-width: 500px;
+    margin: 0 20px 20px 0;
+    .form__about-heading{
+      margin: 0 0 30px 0;
+    }
+
+    .form__about-item{
+      @include latoLightGrayFont;
+      color: rgba(0, 0, 0, 0.8);
+      margin: 0 0 30px 0;
+      display: flex;
+      .form__about-item-count{
+        position: relative;
+        padding: 0px 31px;
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 67px;
+        @extend %CommissionerLightFont;
+        @extend %mainYellowFontColor;
+        &::before{
+          content: "";
+          width: 70px;
+          height: 70px;
+          border: 1px solid #DFC380;
+          position: absolute;
+          top: 0px;
+          left: 0;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          -o-border-radius: 100%;
+        }
+      }
+
+      .form__about-item-content{
+        margin: 0 0 0 20px;
+      }
+    }
+
+    .form__about-content{
+      @include latoLightGrayFont;
+    }
+  }
+}
+

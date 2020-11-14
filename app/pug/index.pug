@@ -1,0 +1,74 @@
+- var titile = 'title'
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title #{titile}
+
+    link(href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;800&family=Lato:wght@300;400;700&family=Source+Sans+Pro:wght@300&display=swap", rel="stylesheet")
+
+    link(rel="stylesheet", href="css/style.min.css")
+
+    script.
+      document.createElement('figure')
+      document.createElement('figcaption')
+
+  body(class = "page")
+    header(class = "header page__header")
+      include header.pug
+
+    section(class = "mainSlider")
+      include mainSlider.pug
+
+
+    main(class = "main")
+      section(class = "escort main__escort contentWidth")
+        include sectionEscort.pug
+
+      section(class = "services main__services contentWidth")
+        include services.pug
+
+      section(class = "mainAction main__mainAction contentWidth")
+        include mainAction.pug
+
+      section(class = "slider main__slider")
+        include slider.pug
+
+      section(class = "comments main__comments")
+        include comments.pug
+
+      section(class = "partners main__partners")
+        include partners.pug
+
+      section(class = "content main__content contentWidth")
+        include content.pug
+
+      img(class = "main__line" src="img/other/other.png", alt="line")
+
+      section(class = "ourWork main__ourWork contentWidth")
+        include ourWork.pug
+
+      section(class = "reasons main__reasons")
+        include reasons.pug
+
+      section(class = "excellence main__excellence contentWidth")
+        include excellence.pug
+
+      section(class = "form main__form contentWidth")
+        include form.pug
+
+      section(class = "servicesCost main__servicesCost contentWidth")
+        include servicesCost.pug
+
+
+    footer(class = "footer page__footer contentWidth")
+      include footer.pug
+
+    section(class = "afterFooter page__afterFooter")
+      include afterFooter.pug
+
+  
+    script(src = "js/js.min.js")

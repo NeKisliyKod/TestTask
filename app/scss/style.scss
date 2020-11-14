@@ -1,0 +1,28 @@
+/*@import "../../node_modules/normalize.css/normalize";*/
+@import "vars";
+@import "fonts";
+@import "common/common";
+@import "common/commonBlocks";
+
+@import "header/header";
+
+@import "main/mainSlider";
+@import "main/main";
+@import "main/sectionEscort";
+@import "main/services";
+@import "main/mainAction";
+@import "main/slider";
+@import "main/comments";
+@import "main/partners";
+@import "main/content";
+@import "main/ourWork";
+@import "main/reasons";
+@import "main/excellence";
+@import "main/form";
+@import "main/servicesCost";
+
+@import "footer/footer";
+@import "afterFooter";
+
+
+@import "media";

@@ -1,0 +1,30 @@
+.main__escort{
+  margin: 0 auto 100px auto;
+}
+
+.escort{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  .escort__content{
+    width: 540px;
+    margin: 50px 0 60px 70px ;
+    .escort__content-heading{
+      margin-bottom: 30px;
+    }
+
+    .escort__content-text{
+      margin-right: 70px;
+      &:not(:last-child){
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .escort__img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    max-height: 645px;
+  }
+}

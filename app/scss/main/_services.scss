@@ -1,0 +1,44 @@
+.main__services{
+  margin: 100px auto;
+}
+
+.services{
+  .services__header{
+    margin: 0 0 30px 0;
+  }
+  .services__list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0 0 40px 0;
+    .services__list-item{
+      position: relative;
+      width: 370px;
+      background-color: #fff;
+      margin-bottom: 30px;
+      min-height: 140px;
+      .services__list-item-content{
+        margin: 25px 40px;
+        width: 180px;
+        p{
+          margin: 0 0 30px 0;
+          font-size: 20px;
+          @extend%CommissionerLightFont;
+        }
+
+        button{
+          @include smallGrayButton;
+          position: absolute;
+          left: 40px;
+          bottom: 20px;
+        }
+      }
+
+      img{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+    }
+  }
+}

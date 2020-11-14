@@ -1,0 +1,32 @@
+.main__partners{
+  margin: 0 0 100px 0;
+  padding: 0 0 100px 0;
+}
+.partners{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  .partners__content{
+    margin: 0 auto;
+    .partners__content-whom{
+      max-width: 670px;
+      margin: 0 130px 40px 0;
+      @include latoLightGrayFont;
+      float: left;
+    }
+
+    .partners__content-btn{
+      @include upSideDownButton;
+    }
+  }
+
+  .partners__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 65px auto 0 auto;
+    justify-content: space-between;
+    .partners__list-item{
+      margin: 0 30px 20px 0;
+    }
+  }
+}

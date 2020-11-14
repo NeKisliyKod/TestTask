@@ -1,0 +1,12 @@
+.afterFooter{
+  background-color: #DADADA;
+  padding: 20px 0;
+  .afterFooter__content{
+    @extend %LatoLightFont;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}

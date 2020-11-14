@@ -1,0 +1,109 @@
+.advantages{
+  display: flex;
+  .advantages__item{
+    width: 270px;
+    background-color: #fff;
+    vertical-align: top;
+    &:not(:last-child){
+      margin-right: 30px;
+    }
+
+    .advantages__item-img{
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      margin: 50px 75px 12px 75px;
+    }
+
+    .advantages__item-text{
+      @include latoLightGrayFont;
+      text-align: center;
+      margin: 12px 20px 40px 20px;
+    }
+  }
+}
+
+.triangle{
+  @include triangle;
+}
+
+.heading{
+  @include mainHeading;
+}
+
+.lightGray{
+  @include latoLightGrayFont;
+}
+
+.btn{
+  @include button;
+}
+
+.consultationForm{
+  background-color: #fff;
+  padding: 50px;
+  max-width: 570px;
+  fieldset{
+    border: none;
+  }
+
+  .consultationForm__elem{
+    margin: 0 0 25px 0;
+    position: relative;
+    &::after{
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    label{
+      display: block;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 20px;
+      @extend %CommissionerLightFont;
+      margin: 0 0 15px 0;
+    }
+
+    input{
+      display: block;
+      border: none;
+      padding: 4px;
+      font-size: 15px;
+      line-height: 25px;
+      @extend %LatoLightFont;
+      color: rgba(0, 0, 0, 0.61);
+      width: 470px;
+    }
+  }
+
+  .consultationForm__confidenciality{
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0 0 15px 0;
+    @extend %LatoLightFont;
+    color: rgba(0, 0, 0, 0.5);
+    button{
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 20px;
+      @extend %CommissionerLightFont;
+      color: #4b4949;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+  }
+
+  .consultationForm__submit{
+    width: 100%;
+    margin: 15px 0 0 0;
+  }
+}
+
+.socialList{
+  display: flex;
+  justify-content: space-between;
+}

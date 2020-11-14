@@ -1,0 +1,32 @@
+div(class = "form__about")
+  h3(class = "form__about-heading heading") Организация сотрудничества
+
+  div(class = "form__about-item") 
+    div(class = "form__about-item-count") 1
+    div(class = "form__about-item-content").
+      Установив контакт с нашим сотрудником, Вы оговорите нюансы предмета обсуждения и согласуете личную встречу.
+
+  div(class = "form__about-item") 
+    div(class = "form__about-item-count") 2
+    div(class = "form__about-item-content").
+      Юрист изучит документы, необходимые для разработки стратегии решения возникшей ситуации. И заключит договор.
+
+  div(class = "form__about-content").
+    Также в нашей компании возможна удаленная форма обслуживания с оказанием полного комплекса юридических услуг в РБ через современные средства связи и мессенджеры.
+
+
+
+form(action="handler.php", class = "form__field consultationForm", name = "consultation" autocomplete = "on")
+  fieldset
+    div(class = "consultationForm__elem")
+      label(for="name") Ваше имя
+      input(type="text", id = "name", placeholder = "Ваше имя")
+
+    div(class = "consultationForm__elem")
+      label(for="tel") Телефон для связи
+      input(type="tel", id = "tel", placeholder = "+375 (XX) XXX-XX-XX")
+
+    div(class = "consultationForm__confidenciality") Нажимая на кнопку «Получить консультацию», вы соглашаетесь с условиями 
+      button(type = "button") Политики конфиденциальности
+
+    button(type = "submit", class = "consultationForm__submit btn") Получить консультацию

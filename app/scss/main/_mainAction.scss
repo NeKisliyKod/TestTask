@@ -1,0 +1,19 @@
+
+.main__mainAction{
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  .mainAction__heading{
+    width: 370px;
+    margin: 0 30px 0 0;
+  }
+
+  .mainAction__content{
+    width: 770px;
+    div{
+      &:not(:last-child){
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

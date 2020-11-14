@@ -1,0 +1,116 @@
+.main__ourWork{
+  margin: 100px auto;
+}
+
+.ourWork{
+  .ourWork__heading{
+    margin: 0 0 30px 0;
+  }
+
+  .ourWork__list{
+    .ourWork__list-item{
+      display: flex;
+      flex-wrap: wrap;
+      &:nth-child(1){
+        .ourWork__list-item-elem{
+          &:first-child{
+            flex: 0 0 40%;
+            border-color: #F2E7CC;
+          }
+          &:last-child{
+            flex: 0 0 57%;
+            border-color: #F2E7CC;
+          }
+        }
+      }
+
+      &:nth-child(2){
+        .ourWork__list-item-elem{
+          &:first-child{
+            flex: 0 0 48%;
+            border-color: #E7D29F;
+          }
+          &:last-child{
+            flex: 0 0 49%;
+            border-color: #E7D29F;
+          }
+        }
+      }
+
+      &:nth-child(3){
+        .ourWork__list-item-elem{
+          &:first-child{
+            flex: 0 0 57%;
+            border-color:  #DFC380;
+          }
+          &:last-child{
+            flex: 0 0 40%;
+            border-color:  #DFC380;
+          }
+        }
+      }
+
+      &:nth-child(4){
+        .ourWork__list-item-elem{
+          &:first-child{
+            flex: 0 0 48%;
+            border-color: #E7D29F;
+          }
+          &:last-child{
+            flex: 0 0 49%;
+            border-color: #E7D29F;
+          }
+        }
+      }
+
+      &:nth-child(5){
+        .ourWork__list-item-elem{
+          &:first-child{
+            flex: 0 0 40%;
+            border-color: #F2E7CC;
+          }
+          &:last-child{
+            flex: 0 0 57%;
+            border-color: #F2E7CC;
+          }
+        }
+      }
+
+      .ourWork__list-item-elem{
+        background-color: #fff;
+        border-left: 70px solid;
+        position: relative;
+        height: 140px;
+        margin: 30px 0;
+        &:first-child{
+          margin-right: 30px;
+        }
+        .ourWork__list-item-elem-heading{
+          margin: 25px 30px;
+          @extend%CommissionerLightFont;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          color: rgba(0, 0, 0, 0.9);
+        }
+        .ourWork__list-item-elem-btn{
+          @include smallGrayButton;
+          position: absolute;
+          right: 30px;
+          bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .ourWork__discr{
+    .ourWork__discr-content{
+      @include latoLightGrayFont;
+      max-width: 770px;
+      display: inline-block;
+    }
+    .ourWork__discr-btn{
+      float: right;
+    }
+  }
+}
